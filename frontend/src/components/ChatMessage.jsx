@@ -1,0 +1,1 @@
+export default function ChatMessage({ message }) { return <article className={`message ${message.role}`}><div className="message-avatar">{message.role === 'ai' ? '◈' : 'You'}</div><div><div className="message-label">{message.role === 'ai' ? 'INTERVISTA' : 'CANDIDATE'}</div><p>{message.text}</p></div></article>; }

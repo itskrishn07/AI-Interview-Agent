@@ -1,0 +1,8 @@
+[
+  {"id":"CAND-001","name":"Sarah Johnson","role":"Senior Data Engineer","experience":9,"education":"MS Computer Science","completedMissions":30,"attempts":17,"skippedTopics":["Monitoring & observability"],"learningSignals":{"commitDays":28,"firstTry":20,"status":"High momentum"}},
+  {"id":"CAND-002","name":"Alex Turner","role":"Backend Software Engineer","experience":5,"education":"B.Tech Computer Science","completedMissions":29,"attempts":26,"skippedTopics":[],"learningSignals":{"commitDays":22,"firstTry":10,"status":"Consistent learner"}},
+  {"id":"CAND-003","name":"Emily Chen","role":"AI Engineer","experience":6,"education":"MS Artificial Intelligence","completedMissions":31,"attempts":10,"skippedTopics":[],"learningSignals":{"commitDays":31,"firstTry":30,"status":"Exceptional fluency"}},
+  {"id":"CAND-005","name":"Michael Brown","role":"DevOps Engineer","experience":10,"education":"B.Tech Information Technology","completedMissions":31,"attempts":19,"skippedTopics":[],"learningSignals":{"commitDays":30,"firstTry":22,"status":"High momentum"}},
+  {"id":"CAND-009","name":"Zara Ahmadi","role":"AI Engineer","experience":1,"education":"BS Computer Science","completedMissions":31,"attempts":10,"skippedTopics":[],"learningSignals":{"commitDays":31,"firstTry":29,"status":"Accelerating fast"}},
+  {"id":"CAND-013","name":"Ravi Patel","role":"Software Engineer","experience":15,"education":"MS Computer Science","completedMissions":30,"attempts":20,"skippedTopics":[],"learningSignals":{"commitDays":27,"firstTry":13,"status":"Strong foundation"}}
+]
