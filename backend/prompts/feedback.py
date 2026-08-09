@@ -17,12 +17,12 @@ ACCUMULATED GAPS:
 INSTRUCTIONS:
 Generate a thorough, evidence-based, actionable feedback report.
 Return a valid JSON object matching this EXACT schema:
-{
+{{
   "summary": "Detailed 2-3 sentence overall synthesis of performance...",
   "strengths": ["Evidence-based bullet point highlighting demonstrated mastery..."],
   "gaps": ["Evidence-based bullet point identifying concrete technical gaps..."],
   "next": ["Actionable next steps with specific curriculum days/topics to study..."]
-}
+}}
 
 REQUIREMENTS:
 - Do NOT provide generic feedback like "You did well, keep practicing".
