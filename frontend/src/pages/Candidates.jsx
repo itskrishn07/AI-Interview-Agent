@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import CandidateCard from '../components/CandidateCard';
 import Button from '../components/Button';
 
-const candidates = candidateData.candidates.slice(0, 6).map((apiCandidate) => {
+const candidates = candidateData.candidates.map((apiCandidate) => {
   const { member, missions = [], signals = {} } = apiCandidate;
   const completed = missions.filter((mission) => mission.passed).length;
   const attempts = missions.reduce((total, mission) => total + (mission.attempts || 0), 0);
