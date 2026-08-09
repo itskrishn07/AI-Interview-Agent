@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     
     HOST: str = "0.0.0.0"
     PORT: int = 8000
-    FRONTEND_ORIGINS: str = "http://localhost:5173,http://127.0.0.1:5173"
+    FRONTEND_ORIGINS: str = "*"
     
     model_config = SettingsConfigDict(
         env_file=str(BASE_DIR / ".env"),
