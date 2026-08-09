@@ -43,6 +43,21 @@ class FeedbackGenerator:
             user_prompt = "Synthesize the candidate's performance into final structured feedback."
             result = llm_service.generate_structured(system_prompt, user_prompt, schema_desc)
             if result and all(k in result for k in ["summary", "strengths", "gaps", "next"]):
+                # Ensure feedback arrays are non-empty
+                if not result.get("strengths"):
+                    result["strengths"] = list(set(session.strengths_accumulated)) or [
+                        f"Demonstrated solid engagement across {len(session.covered_days)} curriculum topics.",
+                        f"Provided practical insights relevant to role as {candidate_profile.role}."
+                    ]
+                if not result.get("gaps"):
+                    result["gaps"] = list(set(session.gaps_accumulated)) or [
+                        "Could elaborate further on production edge-cases and error handling strategies."
+                    ]
+                if not result.get("next"):
+                    result["next"] = [
+                        "Review advanced RAG optimization and production monitoring techniques (Days 26-29).",
+                        "Practice explaining architectural trade-offs in distributed agentic systems."
+                    ]
                 return result
 
         # 3. Deterministic fallback feedback synthesis
